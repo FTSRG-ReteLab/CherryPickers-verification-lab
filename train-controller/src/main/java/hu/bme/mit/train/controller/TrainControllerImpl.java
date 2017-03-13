@@ -12,6 +12,7 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 
+
 	public void timer() {
 		TimerTask tt = new TimerTask() {
 			@Override
@@ -21,6 +22,7 @@ public class TrainControllerImpl implements TrainController {
 		};
 		t.scheduleAtFixedRate(tt, 0, 100);
 	}
+
 
 	@Override
 	public void followSpeed() {
